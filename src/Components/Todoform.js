@@ -92,7 +92,7 @@ const Todoform = () => {
           value={todo.date}
           onChange={handleChange}
         />
-        <Box sx={{ minWidth: "83%", border: "1px solid #000", marginBottom: "1rem", borderRadius: "5px" }}>
+        <Box sx={{ minWidth: "83%", border: "1px solid #000", marginBottom: "1rem", borderRadius: "5px" , fontSize: "1rem", fontWeight: "bold"}}>
           <FormControl fullWidth>
             <Select
               labelId="demo-simple-select-label"
@@ -100,10 +100,11 @@ const Todoform = () => {
               value={todo.priority}
               name="priority"
               onChange={handleChange}
+              sx={{ fontWeight: "800" }}
             >
-              <MenuItem value="Low">Low</MenuItem>
-              <MenuItem value="Medium">Medium</MenuItem>
-              <MenuItem value="High">High</MenuItem>
+              <MenuItem value="Low" sx={{fontWeight: "800"}}>Low</MenuItem>
+              <MenuItem value="Medium" sx={{fontWeight: "800"}}>Medium</MenuItem>
+              <MenuItem value="High" sx={{fontWeight: "800"}}>High</MenuItem>
             </Select>
           </FormControl>
         </Box>

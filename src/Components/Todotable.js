@@ -49,7 +49,7 @@ const Todotable = () => {
   return (
     <>
       <TableContainer component={Paper} sx={{ boxShadow: 3, borderRadius: 2 }}>
-        <Table sx={{ minWidth: 650 }}>
+        <Table sx={{ minWidth: 1200 }}>
           <TableHead>
             <TableRow>
               <StyledTableCell>Task</StyledTableCell>
@@ -61,9 +61,9 @@ const Todotable = () => {
           <TableBody>
             {sortedTodos.map((elem) => (
               <StyledTableRow key={elem.id}>
-                <TableCell>{elem.data.title}</TableCell>
-                <TableCell>{elem.data.date}</TableCell>
-                <TableCell>{elem.data.priority}</TableCell>
+                <TableCell sx={{fontWeight:"800",fontSize:"1rem"}}>{elem.data.title}</TableCell>
+                <TableCell sx={{fontWeight:"800", fontSize:"1rem"}}>{elem.data.date}</TableCell>
+                <TableCell sx={{fontWeight:"800", fontSize:"1rem"}}>{elem.data.priority}</TableCell>
                 <TableCell>
                   <BorderColorIcon
                     sx={{ cursor: 'pointer', color: 'blue', marginRight: 2 }}
@@ -101,7 +101,7 @@ const Todotable = () => {
           }}
         >
           <AddIcon />
-          <span style={{ marginLeft: "8px"}}>Add Todo</span>
+          <span style={{ marginLeft: "8px", fontWeight:"800", textDecoration : "none", fontSize:"1rem"}}>Add Todo</span>
         </Box>
       </Link>
     </>

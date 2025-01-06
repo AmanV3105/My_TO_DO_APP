@@ -10,12 +10,12 @@ body{
     align-items: center;
 }
 .todo-form{
-    height: 520px;
+    height: 614px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 34rem;
+    width: 44rem;
     box-shadow:  rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: white;
     border-radius: 10px;
@@ -34,8 +34,9 @@ body{
     border-radius: 5px;
     padding: 0.5rem;
     cursor: pointer;
-    font-size: larger;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: 800;
+
 }
 .todo-button{
     width: 84%;
