@@ -8,8 +8,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" exact element={<Todoform/>}/>
-          <Route path="/table" exact element={<Todotable/>}/>
+          <Route path="https://amanv3105.github.io/My_TO_DO_APP/" exact element={<Todoform/>}/>
+          <Route path="https://amanv3105.github.io/My_TO_DO_APP/table" exact element={<Todotable/>}/>
         </Routes>
       </BrowserRouter>
     </>
