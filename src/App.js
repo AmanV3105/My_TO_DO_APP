@@ -1,17 +1,17 @@
 import './App.css';
 import Todoform from './Components/Todoform';
 import Todotable from './Components/Todotable';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { HashRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
-          <Route path="https://amanv3105.github.io/My_TO_DO_APP/" exact element={<Todoform/>}/>
-          <Route path="https://amanv3105.github.io/My_TO_DO_APP/table" exact element={<Todotable/>}/>
+          <Route path="/" exact element={<Todoform />} />
+          <Route path="/table" exact element={<Todotable />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
